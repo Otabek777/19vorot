@@ -13,3 +13,36 @@ if(document.querySelector(".basket__form")) {
         $(".basket__modal").removeClass("open")
     });
 };
+$(".header__search").click(function() {
+    setTimeout(function () {
+        $(".header__search").addClass("active");
+    }, 0000000001);
+});
+$(".header__mobile_search").click(function() {
+    setTimeout(function () {
+        $(".header__search").addClass("active");
+    }, 0000000001);
+});
+if(document.querySelector(".reviews__block")) {
+    $(".reviews__block .link").click(function() {
+        $(".reviews__block").removeClass("open");
+        $(".reviews__block .link").removeClass("active");
+        $(".reviews").removeClass("active");
+        var classThis = $(this);
+        setTimeout(function() {
+            $(classThis).parent("div").parent("div").addClass("open");
+            $(classThis).addClass("active");
+            $(".reviews").addClass("active");
+        }, 000001);
+    });
+    $(".reviews__block .close").click(function() {
+        setTimeout(function() {
+            $(".reviews__block").removeClass("open");
+            $(".reviews__block .link").removeClass("active");
+            $(".reviews").removeClass("active");
+        }, 000002);
+    });
+};
+$("body").click(function () {
+    $(".header__search").removeClass("active");
+});
