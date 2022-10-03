@@ -447,6 +447,56 @@
                                 </p>
                             </a>
                         </div>
+                        <div class="product_tab__slider">
+                            <a href="#" class="product_tab__item">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                                <p class="text">
+                                    Полотно из энергоэффективных сэндвич-панелей толщиной 40 мм и усилением под внутренние петли и боковые опоры.
+                                </p>
+                            </a>
+                            <a href="#" class="product_tab__item">
+                                <div class="img">
+                                    <img src="img/2.png" alt="">
+                                </div>
+                                <p class="text">
+                                    Комплект направляющих и угловых стоек из стали толщиной 1,5 мм обладает повышенной прочностью, имеет все необходимые для монтажа перфорации.
+                                </p>
+                            </a>
+                            <a href="#" class="product_tab__item">
+                                <div class="img">
+                                    <img src="img/3.png" alt="">
+                                </div>
+                                <p class="text">
+                                    Оцинкованные пружины растяжения (система «пружина в пружине»). Количество циклов балансировочного механизма — не менее 25 000.
+                                </p>
+                            </a>
+                            <a href="#" class="product_tab__item">
+                                <div class="img">
+                                    <img src="img/4.png" alt="">
+                                </div>
+                                <p class="text">
+                                    Ручка эргономичной формы выступает изящным декоративным дополнением к дизайнерскому исполнению полотна ворот.
+                                </p>
+                            </a>
+                            <a href="#" class="product_tab__item">
+                                <div class="img">
+                                    <img src="img/5.png" alt="">
+                                </div>
+                                <p class="text">
+                                    Тип подъема — низкий, обеспечивает возможность установки конструкции ворот практически в любое помещение.
+                                </p>
+                            </a>
+                            <a href="#" class="product_tab__item">
+                                <div class="img">
+                                    <img src="img/6.png" alt="">
+                                </div>
+                                <p class="text">
+                                    Коробка с комплектацией для монтажа, инструкцией по монтажу и паспортом на изделие.
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="product__bottom">
@@ -699,7 +749,27 @@
             slidesToShow: 4,
             slidesToScroll: 1,
             arrows: true,
-            dots: false
+            dots: false,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
+                }
+            ]
+        });
+        $('.product_tab__slider').slick({
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            variableWidth: true,
+            dots: false,
         });
     </script>
 </body>

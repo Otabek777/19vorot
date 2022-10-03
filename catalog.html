@@ -207,7 +207,7 @@
                     <p>Каталог</p>
                 </div>
                 <div class="catalog__tab">
-                    <a href="#" class="btn active">Каталог товаров</a>
+                    <a href="#" class="btn">Каталог товаров</a>
                     <a href="#" class="btn">Преимущества</a>
                     <a href="#" class="btn">Доставка и установка</a>
                     <a href="#" class="btn">Отзывы</a>
@@ -1001,7 +1001,19 @@
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
-            dots: false
+            dots: false,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
+                }
+            ]
         });
     </script>
 </body>

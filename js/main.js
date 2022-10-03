@@ -43,6 +43,14 @@ if(document.querySelector(".reviews__block")) {
         }, 000002);
     });
 };
+if(document.querySelector(".category__aside")) {
+    $(".btn_open_aside").click(function() {
+       $(".category__aside").addClass("active"); 
+    });
+    $(".category__aside .close").click(function() {
+        $(".category__aside").removeClass("active"); 
+     });
+}
 $("body").click(function () {
     $(".header__search").removeClass("active");
 });

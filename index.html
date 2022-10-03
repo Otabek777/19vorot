@@ -437,6 +437,26 @@
                         <p class="text"><span>Наша цель</span> – помочь вам выбрать правильное решение в обустройстве вашего дома и придомового участка по всему периметру!</p>
                     </div>
                     <div class="company__right">
+                        <div class="box_mobile">
+                            <div class="slider_block">
+                                <img src="img/company-1.png" alt="">
+                            </div>
+                            <div class="slider_block">
+                                <img src="img/company-2.png" alt="">
+                            </div>
+                            <div class="slider_block">
+                                <img src="img/company-3.png" alt="">
+                            </div>
+                            <div class="slider_block">
+                                <img src="img/company-4.png" alt="">
+                            </div>
+                            <div class="slider_block">
+                                <img src="img/company-5.png" alt="">
+                            </div>
+                            <div class="slider_block">
+                                <img src="img/company-6.png" alt="">
+                            </div>
+                        </div>
                         <div class="slider_box">
                             <div class="slider_wrap">
                                 <div class="slider_block">
@@ -750,7 +770,19 @@
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            dots: false
+            dots: false,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
+                }
+            ]
         });
         $('.slider_box').slick({
             infinite: true,
@@ -763,7 +795,19 @@
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
-            dots: false
+            dots: false,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    variableWidth: true
+                }
+                }
+            ]
         });
     </script>
 </body>
