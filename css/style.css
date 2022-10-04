@@ -450,6 +450,9 @@ ul, ol {
   font-weight: 600;
   margin-left: 6px;
 }
+.header__phone img {
+  margin-right: 9px;
+}
 
 .header__call {
   margin-left: auto;
@@ -475,7 +478,7 @@ ul, ol {
 .header__call .btn p {
   border-bottom: 1px dashed #EF7F1A;
 }
-.header__call .btn svg {
+.header__call .btn svg, .header__call .btn img {
   margin-right: 10px;
 }
 
@@ -2765,7 +2768,10 @@ ul, ol {
   display: flex;
   margin-bottom: 40px;
 }
-.footer__phone svg {
+.footer__phone svg, .footer__phone img {
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
   margin-right: 13px;
 }
 .footer__phone .phone {
@@ -3250,7 +3256,7 @@ ul, ol {
     content: "";
     width: 100%;
     height: 100%;
-    background: #FFFFFF url(../img/phone.svg) no-repeat center;
+    background: #FFFFFF url(../img/phone.png) no-repeat center;
     position: absolute;
     top: 0;
     left: 0;
@@ -3334,7 +3340,7 @@ ul, ol {
     content: "";
     width: 100%;
     height: 100%;
-    background: #181B30 url(../img/phone.svg) no-repeat center;
+    background: #181B30 url(../img/phone.png) no-repeat center;
     position: absolute;
     top: 0;
     left: 0;
