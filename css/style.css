@@ -3224,6 +3224,25 @@ ul, ol {
 }
 
 @media screen and (max-width: 768px) {
+  .steps__box {
+    flex-direction: column;
+  }
+  .steps__left {
+      width: 100%;
+      overflow: hidden;
+      overflow-x: auto;
+  }
+  .steps__left #steps-6 {
+      right: auto;
+      left: 383px;
+  }
+  .steps__text {
+      margin-bottom: 10px;
+  }
+  .steps__right {
+      width: 100%;
+      padding: 30px 0 0 10px;
+  }
   .catalog_2__box .services__block {
     width: 100%;
     margin-right: 0;
