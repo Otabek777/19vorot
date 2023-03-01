@@ -3225,23 +3225,26 @@ ul, ol {
 
 @media screen and (max-width: 768px) {
   .steps__box {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .steps__left {
-      width: 100%;
-      overflow: hidden;
-      overflow-x: auto;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
   }
   .steps__left #steps-6 {
-      right: auto;
-      left: 383px;
+    right: auto;
+    left: 383px;
   }
   .steps__text {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
   .steps__right {
-      width: 100%;
-      padding: 30px 0 0 10px;
+    width: 100%;
+    padding: 30px 0 0 10px;
   }
   .catalog_2__box .services__block {
     width: 100%;
@@ -3405,7 +3408,9 @@ ul, ol {
             align-items: flex-start;
   }
   .header__center .soc {
-    display: none;
+    position: absolute;
+    top: 16px;
+    right: 66px;
   }
   .header__center .top {
     margin: 0;
@@ -3517,8 +3522,8 @@ ul, ol {
     width: 100%;
   }
   .header__call {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     position: absolute;
     top: 17px;
     right: 20px;
@@ -3526,8 +3531,8 @@ ul, ol {
   }
   .header__call .btn {
     color: transparent;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
